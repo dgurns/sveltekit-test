@@ -1,4 +1,5 @@
 import preprocess from 'svelte-preprocess';
+import cloudflare from '@sveltejs/adapter-cloudflare';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,8 +9,13 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		adapter: cloudflare({
+			target: 'es2020',
+			platform: 'browser',
+		}),
 	},
+	// Uncomment if using a newer version of SvelteKit and there's a module error
 	// vite: {
 	// 	optimizeDeps: {
 	// 		entries: []

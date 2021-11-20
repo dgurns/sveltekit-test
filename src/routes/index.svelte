@@ -19,7 +19,7 @@
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		to Dan's test<br />SvelteKit app
 	</h1>
 
 	<h2>

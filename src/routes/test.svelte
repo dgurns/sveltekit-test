@@ -18,7 +18,7 @@
 	<title>Test</title>
 </svelte:head>
 
-<div class="content">
+<div class="bg-red-200">
 	<h1>Test route</h1>
 
 	<p>
@@ -26,12 +26,3 @@
 		<a href="/about">Go to About page</a>
 	</p>
 </div>
-
-<style>
-	.content {
-		background-color: lightblue;
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-	}
-</style>
